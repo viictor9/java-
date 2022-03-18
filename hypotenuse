@@ -1,0 +1,29 @@
+package com.company;
+
+//importing scanner class:
+import java.util.Scanner;
+
+public class Main{
+
+    public static void main(String[] args){
+
+        //creating variables:
+        double x, y, z;
+
+        //new scanner object:
+        Scanner scan = new Scanner(System.in);
+
+        //To enter the value of x variable:
+        System.out.println("Enter the value for x");
+        x = scan.nextDouble();
+
+        //To enter the value of y variable:
+        System.out.print("Enter the value of y");
+        y = scan.nextDouble();
+
+        //Applying formula:
+        z = Math.sqrt((x*x)+(y*y));
+
+        System.out.println("Hypotenuse is: " + z);
+    }
+}
